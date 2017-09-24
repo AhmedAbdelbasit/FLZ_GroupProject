@@ -18,7 +18,7 @@ void stepback(){
 }
 
 void brightnessSunIncrease(){     // from 0 step to 50 
-  brightsun=map(steps,0,50,0,255);
+  brightsun = map(steps,0,50,0,255);
   analogWrite(sun,brightsun);
 }
 

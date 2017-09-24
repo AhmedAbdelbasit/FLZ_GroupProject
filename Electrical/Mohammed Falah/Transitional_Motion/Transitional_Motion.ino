@@ -2,6 +2,7 @@
 #define stepPin 3
 #define rightbutton 5
 #define leftbutton 8
+
 #define StepDelay 25
 #define ButtonDelay 400
 
