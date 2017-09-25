@@ -1,0 +1,12 @@
+\contentsline {chapter}{\numberline {1}Introduction}{2}
+\contentsline {part}{I\hspace {1em}Maquette and Scene}{3}
+\contentsline {chapter}{\numberline {2}Maquette Fabrication}{4}
+\contentsline {chapter}{\numberline {3}River Scene}{5}
+\contentsline {chapter}{\numberline {4}Sun and Moon, Design and Control}{6}
+\contentsline {part}{II\hspace {1em}Camera Motion Control}{7}
+\contentsline {chapter}{\numberline {5}Translational Motion}{8}
+\contentsline {section}{\numberline {5.1}Mechanical Design and Fabrication}{8}
+\contentsline {section}{\numberline {5.2}Control and Programming}{8}
+\contentsline {chapter}{\numberline {6}Rotational Motion}{9}
+\contentsline {section}{\numberline {6.1}Mechanical Design and Fabrication}{9}
+\contentsline {section}{\numberline {6.2}Control and Programming}{9}
