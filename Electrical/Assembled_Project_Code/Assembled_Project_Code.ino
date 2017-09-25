@@ -25,13 +25,13 @@
 #define RiverBackSwitch 3
 
 // GeneralDelays
-#define StepLowDelay 10
-#define ButtonDelay 250
+#define StepLowDelay 1
+#define ButtonDelay 1
 
 //##################################################
 // Sun Variables:
 //###############
-  int SunDelay = 100;         // changed with Speed
+  int SunDelay = 1;           // changed with Speed
   int SunSpeed = 1;           // deg/sec
   int SunSteps = 0;           // Sun/Moon Position
   int SunBrightness = 125;    // 0 : 255 PWM
@@ -42,12 +42,13 @@
 // Translation Variables:
 //#######################
 
-#define MinTranslationSpeed 1   // mm /sec
-#define MaxTranslationSpeed 40  // mm /sec
-#define Circumference 40        // mm
-  int TranslationSpeed = 1;     // cm /sec
-  int TranslationDelay = 100;   // changed with Speed
-  int CameraDisplacement = 0;   // mm
+#define MinTranslationSpeed 1     // mm /sec
+#define MaxTranslationSpeed 40    // mm /sec
+#define Circumference 40          // mm
+#define DistancePerStep 0.2       // mm       (Cir/360)*1.8
+  int TranslationSpeed = 1;       // cm /sec
+  int TranslationDelay = 1;       // changed with Speed
+  float CameraDisplacement = 0;   // mm
   int TranslationSteps = 0;
 
 
@@ -57,10 +58,11 @@
 
 #define MinRotationSpeed 1    // mm /sec
 #define MaxRotationSpeed 40   // mm /sec
-#define GearRatio = 4;    
+#define GearRatio = 4;
+#define AnglePerStep 0.45     // deg
   int RotationSpeed = 1;      // deg/sec
-  int RotationDelay = 100;    // changed with Speed
-  int CameraAngle = 0;    
+  int RotationDelay = 1;      // changed with Speed
+  float CameraAngle = 0;    
   int RotationSteps = 0;      
   
 //##################################################
@@ -68,7 +70,7 @@
 //#################
 
   int RiverSpeed = 1;         // mm/sec
-  int RiverDelay = 100;       // changed with Speed
+  int RiverDelay = 1;         // changed with Speed
 
 //##################################################
 // General Variables:
@@ -101,4 +103,3 @@ void setup() {
   pinMode(RiverFrontSwitch, INPUT_PULLUP);
   pinMode(RiverBackSwitch, INPUT_PULLUP);
 }
-
